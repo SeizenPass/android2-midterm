@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center|bottom"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/add_screen_btn_save_marginTop"
+        android:text="@string/none"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Cold" />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/none"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/songName"
+        tools:text="Rich Brian" />
+
+    <TextView
+        android:id="@+id/albumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/none"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author"
+        tools:text="Amen" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:id="@+id/lyrics"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Saw a car crash, it remind me of our first date
+            \nThen I went back, got massages at that one place
+            \nAlways brought friends but today I feel like doin' this shit alone
+            \nCallin' my dad when I wanna hear some wisdom
+            \nCallin' my cab alcohol up in my system
+            \nSaw a fist fight and that shit don't even make me scared no more" />
+    </ScrollView>
+
+</LinearLayout>
